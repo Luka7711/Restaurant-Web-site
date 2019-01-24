@@ -1,0 +1,44 @@
+footer{
+    position:relative;
+}
+
+@keyframes moveup{
+0%{
+    transform:translate(0);
+}
+50%{
+    transform: translate(0, 10px);
+}
+100%{
+    transform: translate(0);
+}
+}
+.arrow{
+    font-size:30px;
+    color:brown;
+    position: absolute;
+    left:50%;
+    top:30px;
+    transition:all 1s;
+    cursor: pointer;
+}
+.arrow:hover{
+animation:moveup 3s;
+}
+
+
+.hidden_content{
+   margin:100px 99px 30px 95px;
+   width:88%;
+   height:0;
+   background:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+   background-size:cover;
+   background-position:center;
+   transition:height .6s;
+ 
+
+}
+
+.height{
+    height:600px;
+}

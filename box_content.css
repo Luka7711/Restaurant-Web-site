@@ -1,0 +1,55 @@
+
+
+.box__content{
+    margin-top:30px 50px;
+    text-align: center;
+}
+    
+    .box__card{
+        width:400px;
+        height:200px;
+        display: inline-block;
+        border-radius: 5px;
+       color:white;
+       
+     }
+.box__card:not(:last-child){
+    margin-right:60px;
+}
+
+.box__card__1{
+    background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-size:cover;
+    background-position:center;
+    filter:blur(.5px);
+    filter: grayscale(50%);
+}
+
+.box__card__2{
+    background:url('https://images.unsplash.com/photo-1448907503123-67254d59ca4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-size:cover;
+    background-position:center;
+    filter:blur(.5px);
+    filter:saturate(200%);
+}
+
+.box__card__3{
+    background:url('https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-size:cover;
+    background-position:center;
+    filter:blur(.2px);
+    /* filter:sepia(20%); */
+}
+
+.box__card button{
+    padding:10px 20px;
+    border:1px solid white;
+    background:rgba(94, 20, 20, .3);
+    color:white;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+ 

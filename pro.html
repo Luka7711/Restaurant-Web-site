@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+
+  body{
+    padding:0 10rem
+    }
+    
+  
+
+  header{
+    background-image:url("https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+    width:100%;
+    height:40rem;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+   }
+    
+  ul{
+    
+    text-align:right;
+    padding:20px;
+    }
+    
+  li{
+    display:inline;
+    padding:5px 15px;
+   
+    }
+  
+ a{
+   color:black;
+   font-weight:600;
+   text-transform:uppercase;
+   transition:all .2s ;
+   color:white;
+   text-decoration:none;
+   padding-bottom:5px;
+   border-bottom:3px solid orange;
+   }
+   
+  a:hover{
+    color:#08aa84;
+    }
+    
+  .blog__section{
+    text-align:right;
+    margin-top:10rem;
+ }
+    .blog__section #blog__name{
+      margin-right:70px;
+      color:white;
+      font-style:italic;
+      font-weight:400;
+      }
+  .avatar__section{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background-size:cover;
+    background-position:center;
+    background-image:url('https://i.imgur.com/2nISsNe.jpg');
+    border:3px solid white;
+    margin-left:60rem;
+    transition:all .5s;
+    }
+    
+    
+      
+      
+    @keyframes moveup{
+      0%{
+        transform:translate(0);
+        }
+        
+      50%{
+        transform:translate(0, 1rem);
+        }
+        
+      100%{
+        transform:translate(0);
+        }  
+      }  
+      
+      .avatar__increase{
+   
+      animation-name:moveup;
+      animation-duration:4s;
+      -webkit-animation-duration:4s;
+      }
+      
+      button{
+        background:orange;
+        border:1px solid lightgrey;
+        padding:5px 15px;
+        margin:30px 0;
+        color:white;
+        }
+    
+    footer{
+      text-align:center;
+      }
+    article{
+      display:inline-block;
+      width:330px;
+      }
+      
+    article:not(:last-child){
+      margin-right:70px;
+      }
+       .image__box{
+    
+      height:190px;
+      width:190px;
+   
+      background-image:url('https://www.biotekrx.com/wp-content/uploads/2017/08/IMG_1185.png');
+      background-size:cover;
+      }
+      
+    .image__box:hover{
+      background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Emblem-question.svg/1024px-Emblem-question.svg.png');
+      }
+    
+      
+        .image__box{
+    
+      height:190px;
+      width:190px;
+      margin-left:70px;
+      background-image:url('https://www.biotekrx.com/wp-content/uploads/2017/08/IMG_1185.png');
+      background-size:cover;
+      }
+
+.resp__1{  
+   background-image:url('https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png');
+    }
+    
+    .resp__2{
+      background-image:url('https://ccsu.co.uk/asset/Organisation/6130/boxing-logo.png?thumbnail_width=270&thumbnail_height=370&resize_type=ResizeFitAll');
+      }
+      
+    .resp__3{
+      background-image:url('https://cdn.countryflags.com/thumbs/italy/flag-3d-round-250.png');
+     
+     
+      }
+        </style>
+  
+</head>
+
+<body>
+<header>
+<ul>
+<li><a href="#">About Me</a></li>
+<li><a href="#">My projects</a></li>
+ <li><a href="#">Software News</a></li>
+</ul>
+
+<div class="blog__section">
+    <div class="avatar__section">
+  
+  </div>
+  <h1 id="blog__name">Luka's Blog</h1>
+</div><!--blog__section-->
+</header>
+<footer>
+
+<article>
+<h1>My fav prog language ... </h1>
+<div class="image__box image__1">
+
+</div>
+<button class="btn_1">click</button>
+</article>
+
+  <article>
+<h1>What i do on my free time ... </h1>
+<div class="image__box image__2">
+
+</div>
+  <button class="btn_2">click</button>
+</article>
+
+  <article>
+<h1>Country i would like to visit ... </h1>
+<div class="image__box image__3">
+
+</div>
+  <button class="btn_3">click</button>
+</article>
+</footer>
+
+
+<script>
+$('#blog__name').on('mouseover', function (){
+$('.avatar__section').addClass('avatar__increase');
+});
+$('#blog__name').on('mouseleave', function (){
+$('.avatar__section').removeClass('avatar__increase');
+});
+
+$('.btn_1').on('click', function(){
+$('.image__1').toggleClass('resp__1');
+
+  });
+  
+$('.btn_2').on('click', function(){
+$('.image__2').toggleClass('resp__2');  
+  });
+  
+    $('.btn_3').on('click', function(){
+$('.image__3').toggleClass('resp__3');  
+  });
+</script>
+</body>
+
+
